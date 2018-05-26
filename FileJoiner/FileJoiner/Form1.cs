@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FileJoiner
@@ -35,6 +27,8 @@ namespace FileJoiner
             if (joiner.ProjectPath != null)
             {
                 joiner.JoinFiles();
+
+                if(joiner.Result != null) { Clipboard.SetText(joiner.Result); }
             }
         }
 
@@ -58,7 +52,7 @@ namespace FileJoiner
                     using (var stream = new StreamWriter(File.Create(path)))
                     {
                         stream.Write(joiner.Result);
-                    }
+                    }              
                 }
             }
         }

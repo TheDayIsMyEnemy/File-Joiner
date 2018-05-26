@@ -58,7 +58,7 @@
             // 
             // folderBrowserDialog1
             // 
-            this.folderBrowserDialog1.SelectedPath = "C:\\Users\\psycho realm\\Documents\\Visual Studio 2017\\Projects";
+            //this.folderBrowserDialog1.SelectedPath = "C:\\Users\\psycho realm\\Documents\\Visual Studio 2017\\Projects";
             // 
             // CopyToClipboard
             // 
